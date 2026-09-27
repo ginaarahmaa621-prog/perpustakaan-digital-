@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Perpustakaan Digital</h1>
+        <p>Temukan dan baca buku favoritmu</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#koleksi">Koleksi Buku</a>
+        <a href="#tambah">Tambah Buku</a>
+    </nav>
+
+    <main>
+        <section id="beranda" class="hero">
+            <h2>Selamat Datang!</h2>
+            <p>Jelajahi koleksi buku digital dengan mudah.</p>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Cari judul atau penulis..."
+            >
+        </section>
+
+        <section id="koleksi">
+            <h2>📖 Koleksi Buku</h2>
+
+            <select id="categoryFilter">
+                <option value="Semua">Semua Kategori</option>
+                <option value="Novel">Novel</option>
+                <option value="Pendidikan">Pendidikan</option>
+                <option value="Sejarah">Sejarah</option>
+                <option value="Teknologi">Teknologi</option>
+            </select>
+
+            <div id="bookList" class="book-container"></div>
+        </section>
+
+        <section id="tambah" class="form-section">
+            <h2>➕ Tambah Buku</h2>
+
+            <form id="bookForm">
+                <input type="text" id="title" placeholder="Judul buku" required>
+                <input type="text" id="author" placeholder="Nama penulis" required>
+
+                <select id="category" required>
+                    <option value="">Pilih kategori</option>
+                    <option value="Novel">Novel</option>
+                    <option value="Pendidikan">Pendidikan</option>
+                    <option value="Sejarah">Sejarah</option>
+                    <option value="Teknologi">Teknologi</option>
+                </select>
+
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Perpustakaan Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
